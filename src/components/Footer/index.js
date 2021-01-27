@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 
 const FooterWrapper = styled.footer`
@@ -43,7 +44,9 @@ export default function Footer(props) {
         <a href="https://www.alura.com.br/">
           <span>Imersão React da Alura</span>
         </a>
-        {' '} by Greyce Riquinho
+        {' '}
+        {' '}
+        by Greyce Riquinho
       </p>
     </FooterWrapper>
   );
