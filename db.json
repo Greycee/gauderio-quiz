@@ -1,0 +1,43 @@
+{
+  "bg": "https://i.ytimg.com/vi/JLBBtLLkz7w/maxresdefault.jpg",
+  "title": "Gaudério Quiz",
+  "description": "Vamos ver se tu merece um churrasco!",
+  "questions": [
+    {
+      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
+      "title": "Como fazer um seletor por id via CSS?",
+      "description": "Essa é pra aquecer",
+      "answer": 2,
+      "alternatives": [
+        ".elemento",
+        "*elemento",
+        "#elemento",
+        "%elemento"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+      "title": "Como fazer um background gradiente com css?",
+      "description": "Faz tempo em haha",
+      "answer": 0,
+      "alternatives": [
+         "background: linear-gradient(#e66465, #9198e5);",
+         "background: gradient(#e66465, #9198e5);"
+      ]
+    }
+  ],
+  "external": [
+    ""
+  ],
+  "theme": {
+    "colors": {
+      "primary": "#b2a429",
+      "secondary": "#b26500",
+      "mainBg": "#171B35",
+      "contrastText": "#FFFFFF",
+      "wrong": "#b22a00",
+      "success": "#357a38"
+    },
+    "borderRadius": "4px"
+  }
+}
