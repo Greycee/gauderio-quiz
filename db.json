@@ -1,28 +1,126 @@
 {
   "bg": "https://i.ytimg.com/vi/JLBBtLLkz7w/maxresdefault.jpg",
   "title": "Gaudério Quiz",
-  "description": "Vamos ver se tu merece um churrasco!",
+  "description": "Vamos ver se tu domina o vocabulário gauchês e merece um churrasco!",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
+      "image": "https://pbs.twimg.com/media/Dx9w0YUXcAA3eIt.jpg",
+      "title": "Me caiu os butiá do bolso",
+      "description": "Essa é uma expressão usada para indicar que a pessoa ficou:",
       "answer": 2,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Sem dinheiro",
+        "Desempregada",
+        "Surpresa",
+        "Feliz"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
+      "image": "https://www.c5producoes.com/arquivos_galeria/77..jpg",
+      "title": "Tua japona é muito tri!",
+      "description": "Japona é usada no Sul para se referir a uma:",
       "answer": 0,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+         "Japonesa grande",
+         "Jaqueta",
+         "Bota especial",
+         "Vestido comprido"
+      ]
+    },
+    {
+      "image": "https://s2.glbimg.com/KKZNvRp1kqBLB9dbx-EAm6SPjbs=/0x0:960x960/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_b58693ed41d04a39826739159bf600a0/internal_photos/bs/2017/1/Z/10a36cSOSo2VVgFrphAA/guri-de-uruguaiana.jpg",
+      "title": "Bah, ele tá bem atucanado hoje!",
+      "description": "Se ele está atucanado, ele está:",
+      "answer": 3,
+      "alternatives": [
+         "Cansado",
+         "Arrumado",
+         "Feliz",
+         "Atarefado"
+      ]
+    },
+    {
+      "image": "http://diariogaucho.rbsdirect.com.br/imagesrc/25522321.jpg?w=620",
+      "title": "Preteou o olho da gateada!",
+      "description": "Essa expressão significa que:",
+      "answer": 3,
+      "alternatives": [
+         "Borrou a maquiagem",
+         "Deu ruim!",
+         "Deu coisa boa!",
+         "Fechou o tempo e começou a chover"
+      ]
+    },
+    {
+      "image": "https://www.rbsdirect.com.br/imagesrc/25665325.jpg?w=640",
+      "title": "Fui no bolicho ver se tinha um bom guisado",
+      "description": "Bolicho e guisado se referem respectivamente a:",
+      "answer": 1,
+      "alternatives": [
+         "Bailão e mulher bonita",
+         "Mercado e carne moída",
+         "Banco e dinheiro na conta",
+         "Salão de jogos e um potencial competidor/rival "
+      ]
+    },
+    {
+      "image": "https://sebraers.com.br/wp-content/uploads/2019/05/guri-de-uruguaiana_normal.jpg",
+      "title": "Ela tava lagarteando no sol!",
+      "description": "Lagartear é:",
+      "answer": 1,
+      "alternatives": [
+          "Correr",
+          "Descansar",
+          "Fazer exercícios",
+          "Brincar"
+      ]
+    },
+    {
+      "image": "https://www.c5producoes.com/arquivos_galeria/183..jpg",
+      "title": "Um cusco guaipeca apareceu lá na baia",
+      "description": "O que é um cusco guaipeca?",
+      "answer": 0,
+      "alternatives": [
+          "Um cachorro vira-lata",
+          "Um cavalo não domesticado",
+          "Um cachorro de pedigree",
+          "Um fazendeiro do interior"
+      ]
+    },
+    {
+      "image": "http://diariogaucho.rbsdirect.com.br/imagesrc/27449533.jpg?w=620",
+      "title": "Tu parece um chinelão com essa calça de brim!",
+      "description": "O que é chinelão?",
+      "answer": 3,
+      "alternatives": [
+          "Alguém que usa chinelos de borracha",
+          "Alguém que parece um executivo",
+          "Alguém com roupas muito folgadas",
+          "Alguém mal arrumado"
+      ]
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVzU5fWa_6_CWzNoLMJZ5_gG-nABuOQhbKAw&usqp=CAU",
+      "title": "Aquele vivente ficou se arriando no piá!",
+      "description": "O que é arriar?",
+      "answer": 1,
+      "alternatives": [
+          "Dar mole",
+          "Debochar",
+          "Puxar briga",
+          "Marcar no futebol"
+      ]
+    },
+    {
+      "image": "http://diariogaucho.rbsdirect.com.br/imagesrc/25733555.jpg?w=620",
+      "title": "O brigadiano viu a pechada que deu ali na sinaleira, passando o quebra-molas!",
+      "description": "Quem é o brigadiano?",
+      "answer": 2,
+      "alternatives": [
+          "Bombeiro",
+          "Guarda de trânsito",
+          "Policial militar",
+          "Transeúnte"
       ]
     }
   ],
