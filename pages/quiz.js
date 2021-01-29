@@ -42,7 +42,7 @@ const QuestionWidget = ({
             onSubmit();
             addResult(isCorrect);
             setSelectedAlternative(undefined);
-          }, 3000);
+          }, 1000);
         }}
         >
           {question.alternatives.map((alternative, alternativeIndex) => {
@@ -63,8 +63,8 @@ const QuestionWidget = ({
             );
           })}
           <Button type="submit" disabled={!choseAlternative}>Confirmar</Button>
-          {questionSubmitted && isCorrect && <p>Certo!</p>}
-          {questionSubmitted && !isCorrect && <p>Errado!</p>}
+          {questionSubmitted && isCorrect && <p>Boa!</p>}
+          {questionSubmitted && !isCorrect && <p>Ops!</p>}
         </AlternativesForm>
       </Widget.Content>
     </Widget>
@@ -105,14 +105,62 @@ function ResultWidget({ results }) {
         </p>
         <ul>
           {results.map((result, index) => (
-            <li key={index}>
-              {console.log(index)}
+            // eslint-disable-next-line react/no-array-index-key
+            <li key={index} style={{ paddingBottom: '15px' }}>
               {result === true ? '✅' : '❌'}{' '}
               {index + 1}
               {' '}
               -
               {' '}
-              {result === true ? 'Certo' : 'Errado'}
+              {result === true ? 'Certo ' : 'Errado'}<br />
+              {(() => {
+                switch (index) {
+                  case 0:
+                    return (
+                      'Quando tu te surpreende com alguma coisa, tu fala: "Bah, me caiu os butiá do bolso!"'
+                    );
+                  case 1:
+                    return (
+                      'Japona serve para jaqueta ou casaco!'
+                    );
+                  case 2:
+                    return (
+                      'Estar atucanado é estar atarefado. Também serve para estressado, irritado.'
+                    );
+                  case 3:
+                    return (
+                      'Preteou o olho da gateada: deu ruim 😬!'
+                    );
+                  case 4:
+                    return (
+                      'Bolicho é um mercado e guisado é carne moída.'
+                    );
+                  case 5:
+                    return (
+                      'Lagartear é descansar. Gaucho adora lagartear no sol comendo bergamota 🍊!'
+                    );
+                  case 6:
+                    return (
+                      'Cusco guaipeca é um cachorro vira-lata. 🐕'
+                    );
+                  case 7:
+                    return (
+                      'Chinelão é alguém mal arrumado.'
+                    );
+                  case 8:
+                    return (
+                      'Se arriar é debochar, zoar, tirar sarro de alguém.'
+                    );
+                  case 9:
+                    return (
+                      'Brigadiano é como chamamos a polícia militar aqui no Sul! 👮'
+                    );
+                  default:
+                    return (
+                      ''
+                    );
+                }
+              })()}
             </li>
           ))}
         </ul>

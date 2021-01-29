@@ -32,7 +32,7 @@ export default function Home() {
               router.push(`/quiz?name=${name}`);
             }}
             >
-              <Input placeholder="Qual é teu nome, tchê?" onChange={(e) => setName(e.target.value)} value={name} />
+              <Input placeholder="Como é teu nome, tchê?" onChange={(e) => setName(e.target.value)} value={name} />
               <Button type="submit" disabled={name.length === 0}>Testar!</Button>
             </form>
           </Widget.Content>
