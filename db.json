@@ -19,7 +19,7 @@
       "image": "https://www.c5producoes.com/arquivos_galeria/77..jpg",
       "title": "Tua japona é muito tri!",
       "description": "Japona é usada no Sul para se referir a uma:",
-      "answer": 0,
+      "answer": 1,
       "alternatives": [
          "Japonesa grande",
          "Jaqueta",
@@ -40,10 +40,10 @@
       ]
     },
     {
-      "image": "http://diariogaucho.rbsdirect.com.br/imagesrc/25522321.jpg?w=620",
+      "image": "https://crismenegon.com.br/wp-content/uploads/2018/10/20137529.jpg",
       "title": "Preteou o olho da gateada!",
       "description": "Essa expressão significa que:",
-      "answer": 3,
+      "answer": 1,
       "alternatives": [
          "Borrou a maquiagem",
          "Deu ruim!",
@@ -67,11 +67,11 @@
       "image": "https://sebraers.com.br/wp-content/uploads/2019/05/guri-de-uruguaiana_normal.jpg",
       "title": "Ela tava lagarteando no sol!",
       "description": "Lagartear é:",
-      "answer": 1,
+      "answer": 2,
       "alternatives": [
           "Correr",
-          "Descansar",
           "Fazer exercícios",
+          "Descansar",
           "Brincar"
       ]
     },
@@ -88,7 +88,7 @@
       ]
     },
     {
-      "image": "http://diariogaucho.rbsdirect.com.br/imagesrc/27449533.jpg?w=620",
+      "image": "https://lh3.googleusercontent.com/proxy/An0rl8eTiQNhSNiw1rq3vd0at401seSgzoTiQWPyQtkVCiJGF-A9vYxob3eWH4pcQWFJdehYgARJfefRxos0WNTEs5F34LDb3AwD-fvU46jg9Ez011Q4wg",
       "title": "Tu parece um chinelão com essa calça de brim!",
       "description": "O que é chinelão?",
       "answer": 3,
@@ -112,7 +112,7 @@
       ]
     },
     {
-      "image": "http://diariogaucho.rbsdirect.com.br/imagesrc/25733555.jpg?w=620",
+      "image": "https://www.c5producoes.com/arquivos_galeria/26..jpg",
       "title": "O brigadiano viu a pechada que deu ali na sinaleira, passando o quebra-molas!",
       "description": "Quem é o brigadiano?",
       "answer": 2,
@@ -131,7 +131,7 @@
     "colors": {
       "primary": "#b2a429",
       "secondary": "#b26500",
-      "mainBg": "#171B35",
+      "mainBg": "#0c0c0f",
       "contrastText": "#FFFFFF",
       "wrong": "#b22a00",
       "success": "#357a38"

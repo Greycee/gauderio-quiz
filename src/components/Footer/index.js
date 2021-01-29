@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
 import styled from 'styled-components';
 
@@ -37,16 +38,17 @@ export default function Footer(props) {
         <img src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg" alt="Logo Alura" />
       </a>
       <p>
-        orgulhosamente criado durante
-        {' '}
-        a
-        {' '}
+        Criado durante a {' '}
         <a href="https://www.alura.com.br/">
           <span>Imersão React da Alura</span>
         </a>
         {' '}
-        {' '}
-        by Greyce Riquinho
+        por Greyce Riquinho.
+        <br />
+        Imagens: Guri de Uruguaiana - personagem de {' '}
+        <a href="https://www.facebook.com/jairkobe">
+          <span>Jair Kobe.</span>
+        </a>
       </p>
     </FooterWrapper>
   );
