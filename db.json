@@ -23,8 +23,8 @@
       "alternatives": [
          "Japonesa grande",
          "Jaqueta",
-         "Bota especial",
-         "Vestido comprido"
+         "Bota de couro",
+         "Veste comprida"
       ]
     },
     {
@@ -55,11 +55,11 @@
       "image": "https://www.rbsdirect.com.br/imagesrc/25665325.jpg?w=640",
       "title": "Fui no bolicho ver se tinha um bom guisado",
       "description": "Bolicho e guisado se referem respectivamente a:",
-      "answer": 1,
+      "answer": 2,
       "alternatives": [
          "Bailão e mulher bonita",
-         "Mercado e carne moída",
          "Banco e dinheiro na conta",
+         "Mercado e carne moída",
          "Salão de jogos e um potencial competidor/rival "
       ]
     },
@@ -70,7 +70,7 @@
       "answer": 2,
       "alternatives": [
           "Correr",
-          "Fazer exercícios",
+          "Dançar",
           "Descansar",
           "Brincar"
       ]
