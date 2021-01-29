@@ -137,7 +137,7 @@ function ResultWidget({ results }) {
                     );
                   case 5:
                     return (
-                      'Lagartear é descansar. Gaucho adora lagartear no sol comendo bergamota 🍊!'
+                      'Lagartear é descansar. Gaúcho adora lagartear no sol comendo bergamota 🍊!'
                     );
                   case 6:
                     return (
