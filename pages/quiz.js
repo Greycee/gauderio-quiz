@@ -82,6 +82,8 @@ function LoadingWidget() {
 }
 
 function ResultWidget({ results }) {
+  const score = results.filter((x) => x).length;
+  const checkAnswers = 'Confere aí teu desempenho e as respostas que tu não sabia:';
   return (
     <Widget>
       <Widget.Header>
@@ -92,17 +94,30 @@ function ResultWidget({ results }) {
           if (correctAnswer) { return result + 1; }
           return correctAnswer;
         }, 0)} */}
-        {results.filter((x) => x).length}
+        {score}
         {' '}
         perguntas!
       </Widget.Header>
       <Widget.Content>
-        <p>
-          Domina
-          {' '}
-          {results.filter((x) => x).length}
-          0% do vocabulário gauchês. Merece ou não merece um churrasco?!
-        </p>
+        {(() => {
+          switch (score) {
+            case 1: case 2: case 3: case 4:
+              return (`Capaz, só?! Cola num gaúcho pra dominar logo esse vocabulário gaudério! E parabéns por ter chegado até aqui! ${checkAnswers}`);
+            case 5:
+              return (`Tu acertou a metade! Tá no caminho certo para dominar o gauchês, parabéns! ${checkAnswers}`);
+            case score === 6 || 7:
+              return (`Acertou mais da metade, hein?! tá tri! Parabéns! ${checkAnswers}`);
+            case 8 || 9:
+              return (`Bah, parabéns! Tu foi tri bem e tá muito por dentro do vocabulário gaudério! ${checkAnswers}`);
+            case 10:
+              return ('Bah, parabéns! Acertou tudo!!! Tu já é praticamente um gaúcho! 🙌🎉');
+            default:
+              return (
+                ''
+              );
+          }
+        })()}
+        <br />
         <ul>
           {results.map((result, index) => (
             // eslint-disable-next-line react/no-array-index-key
