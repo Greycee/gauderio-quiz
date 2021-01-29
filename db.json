@@ -17,14 +17,14 @@
     },
     {
       "image": "https://pbs.twimg.com/profile_images/1334840910681661442/77EoR99-.jpg",
-      "title": "Tua japona é muito tri!",
-      "description": "Japona é usada no Sul para se referir a uma:",
+      "title": "Mas que japona tri!",
+      "description": "Japona se refere a",
       "answer": 1,
       "alternatives": [
-         "Japonesa grande",
-         "Jaqueta",
-         "Bota de couro",
-         "Veste comprida"
+         "Uma japonesa grande",
+         "Um casaco",
+         "Uma bota de couro",
+         "Um vestido comprido"
       ]
     },
     {
@@ -113,7 +113,7 @@
     },
     {
       "image": "https://www.c5producoes.com/arquivos_galeria/26..jpg",
-      "title": "O brigadiano viu a pechada que deu ali na sinaleira, passando o quebra-molas!",
+      "title": "O brigadiano viu a pechada que deu ali na sinaleira, passando a lomba!",
       "description": "Quem é o brigadiano?",
       "answer": 2,
       "alternatives": [
