@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 import React, { useState } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
@@ -9,12 +10,14 @@ import Footer from '../src/components/Footer';
 import QuizBackground from '../src/components/QuizBackground';
 import QuizContainer from '../src/components/QuizContainer';
 import GitHubCorner from '../src/components/GitHubCorner';
+import Link from '../src/components/Link';
+// import { motion } from 'framer-motion';
 
 export default function Home() {
   const router = useRouter();
   const [name, setName] = useState('');
   return (
-    <QuizBackground>
+    <QuizBackground backgroundImage={db.bg}>
       <Head>
         <title>Gaudério Quiz</title>
       </Head>
@@ -35,6 +38,23 @@ export default function Home() {
               <Input placeholder="Como é teu nome, tchê?" onChange={(e) => setName(e.target.value)} value={name} />
               <Button type="submit" disabled={name.length === 0}>Testar!</Button>
             </form>
+          </Widget.Content>
+        </Widget>
+
+        <Widget style={{ marginBottom: '190px' }}>
+          <Widget.Header>
+            <h1>Veja também:</h1>
+          </Widget.Header>
+          <Widget.Content>
+            <ul>{db.external.map((externalLink) => {
+              const [project, user] = externalLink
+                .replace(/\//g, '')
+                .replace('https:', '')
+                .replace('vercel.app', '')
+                .split('.');
+              return (<li key={externalLink}><Widget.Topic as={Link} href={`/quiz/${project}___${user}`}>{`${project} by ${user} `}</Widget.Topic></li>);
+            })}
+            </ul>
           </Widget.Content>
         </Widget>
       </QuizContainer>

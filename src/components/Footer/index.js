@@ -7,11 +7,12 @@ const FooterWrapper = styled.footer`
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #00000070;
+  background-color: #0d0d11e3;
   padding: 20px;
   display: flex;
   align-items: center;
   border-radius: 4px; 
+  z-index: 10;
   img {
     width: 58px;
     margin-right: 23px;

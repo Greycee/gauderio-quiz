@@ -2,16 +2,17 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useState, useEffect } from 'react';
-import db from '../db.json';
-import Widget from '../src/components/Widget';
-import Button from '../src/components/Button';
-import QuizBackground from '../src/components/QuizBackground';
-import QuizContainer from '../src/components/QuizContainer';
-import AlternativesForm from '../src/components/AlternativesForm';
+import Widget from '../../components/Widget';
+import Button from '../../components/Button';
+import QuizBackground from '../../components/QuizBackground';
+import QuizContainer from '../../components/QuizContainer';
+import AlternativesForm from '../../components/AlternativesForm';
+import BackLinkArrow from '../../components/BackLinkArrow';
 
 const QuestionWidget = ({
   question,
   questionIndex,
+  totalQuestions,
   onSubmit,
   addResult,
 }) => {
@@ -22,8 +23,9 @@ const QuestionWidget = ({
   const isCorrect = selectedAlternative === question.answer;
   return (
     <Widget>
+      <BackLinkArrow href="/" />
       <Widget.Header>
-        <h3>{`Pergunta ${questionIndex + 1} de ${db.questions.length}`}</h3>
+        <h3>{`Pergunta ${questionIndex + 1} de ${totalQuestions}`}</h3>
       </Widget.Header>
       <img
         style={{
@@ -186,12 +188,14 @@ function ResultWidget({ results }) {
 
 const screenStates = { QUIZ: 'QUIZ', LOADING: 'LOADING', RESULT: 'RESULT' };
 
-export default function QuizPage() {
+export default function QuizPage({ externalQuestions, externalBg }) {
   const [screenState, setScreenState] = useState(screenStates.LOADING);
   const [results, setResults] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const questionIndex = currentQuestion;
-  const question = db.questions[questionIndex];
+  const question = externalQuestions[questionIndex];
+  const totalQuestions = externalQuestions.length;
+  const bg = externalBg;
 
   const addResult = (result) => {
     setResults([...results, result]);
@@ -205,7 +209,7 @@ export default function QuizPage() {
 
   const handleSubmit = () => {
     const nextQuestion = questionIndex + 1;
-    if (nextQuestion < db.questions.length) {
+    if (nextQuestion < totalQuestions) {
       setCurrentQuestion(questionIndex + 1);
     } else {
       setScreenState(screenStates.RESULT);
@@ -213,7 +217,7 @@ export default function QuizPage() {
   };
 
   return (
-    <QuizBackground backgroundImage={db.bg}>
+    <QuizBackground backgroundImage={bg}>
       <QuizContainer>
         {screenState === screenStates.QUIZ
           && (

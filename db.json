@@ -125,7 +125,9 @@
     }
   ],
   "external": [
-    ""
+    "https://alura-imersao-react-next.thamirysgardinalli.vercel.app/",
+    "https://theofficequiz.brunaguedes92.vercel.app/",
+    "https://greys-anatomy-quiz.m1lenarodrigues.vercel.app/"
   ],
   "theme": {
     "colors": {
